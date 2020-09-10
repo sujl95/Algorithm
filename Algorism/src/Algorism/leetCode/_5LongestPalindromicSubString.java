@@ -1,7 +1,5 @@
 package Algorism.leetCode;
 
-import java.util.Arrays;
-
 public class _5LongestPalindromicSubString {
 
 	public static void main(String[] args) {
