@@ -14,14 +14,15 @@ public class P42889_Fail {
 
         double[] arr = new double[N];
         Arrays.sort(stages);
-        int cnt = 0;
-        int temp = stages[0];
+        int cnt = 1;
+        int temp = 0;
         int idx = 0;
         for(int i =0; i< stages.length;i++){
             if(temp != stages[i]) {
-                arr[idx] = (double)cnt/(stages.length);
-                System.out.println(stages.length);
-                System.out.println((double)cnt/(stages.length));
+                arr[idx] = (double)cnt/(stages.length-i);
+                System.out.println("stages.length-i="+(stages.length-i));
+                System.out.println("cnt="+(cnt));
+                System.out.println("(double)cnt/(stages.length-i)"+((double)cnt/(stages.length-i)));
                 cnt =0;
                 idx++;
             }
