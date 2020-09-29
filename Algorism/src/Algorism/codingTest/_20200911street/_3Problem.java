@@ -11,7 +11,6 @@ public class _3Problem {
     }
 
     public static int solution(int[] A) {
-        // write your code in Java SE 8
         Arrays.sort(A);
         List<Integer> list = new ArrayList<>();
         List<Integer> Alist = new ArrayList<>();
