@@ -1,6 +1,6 @@
 package Algorism.Java.ThisisCodingTest.Implementation;
 
-public class night {
+public class _2night {
 
     public static void main(String[] args) {
         System.out.println(solution("a1"));
