@@ -4,16 +4,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class _3GameDev {
-    private static int[] xyArr;
-    private static int[] xyChar;
+    private static int[] xyArr,xyChar;
     private static int cnt = 0;
     private static int length;
     private static int[] dx = {-1,0,1,0};
     private static int[] dy = {0,1,0,-1};
-    private static int[][] arr;
+    private static int[][] arr,dp;
     private static int[] point = new int[2];
     private static int Direction ;
-    private static int[][] dp ;
 
     public static void main(String[] args) {
         System.out.println(solution());
