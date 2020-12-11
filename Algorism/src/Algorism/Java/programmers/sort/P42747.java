@@ -17,7 +17,6 @@ public class P42747 {
             }
             if (i >= cnt && n - cnt <= i)
                 answer = Math.max(answer, cnt);
-
         }
         return answer;
     }
