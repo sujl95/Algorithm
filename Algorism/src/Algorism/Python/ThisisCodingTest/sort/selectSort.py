@@ -7,5 +7,4 @@ for i in range(len(array)):
             minIndex = j
     array[i], array[minIndex] = array[minIndex], array[i] # 스와프
 
-
 print(array)
