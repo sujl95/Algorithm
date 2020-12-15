@@ -10,17 +10,12 @@ public class P12915 {
 		
 	}
 	public static String[] solution(String[] strings, int n) {
-	      ArrayList<String> list = new ArrayList<>();
-	      for (int i=0; i<strings.length; i++) {
-	    	  list.add(strings[i].substring(n)+i);
-	    	  System.out.println(strings[i].substring(n)+i);
-	      }
-	      list.sort(null);
-	      String[] answer = new String[list.size()];
-	      for(int i=0; i<list.size(); i++) {
-	    	  answer[i] = strings[Integer.parseInt(list.get(i).substring(list.get(i).length()-1, list.get(i).length()))];
-	    	  
-	      }
-	      return answer;
+		for (int i=0; i<strings.length; i++)
+			strings[i] = strings[i].substring(n, n+1)+strings[i];
+		Arrays.sort(strings);
+		String[] answer = new String[strings.length];
+		for(int i=0;i<strings.length;i++)
+			answer[i]= strings[i].substring(1);
+		return answer;
     }
 }
