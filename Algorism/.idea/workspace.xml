@@ -20,20 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="371a5cf2-6e6b-4972-9ee7-5c487ff93a39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GrepConsole.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorism.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorism.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5689655" />
@@ -89,6 +76,14 @@
       <updated>1605027643916</updated>
       <workItem from="1605027645126" duration="140000" />
       <workItem from="1605027878657" duration="13000" />
+      <workItem from="1607605975103" duration="261000" />
+      <workItem from="1607691785127" duration="72000" />
+      <workItem from="1607691918751" duration="81000" />
+      <workItem from="1607762520167" duration="2000" />
+      <workItem from="1607762541919" duration="603000" />
+      <workItem from="1607777559191" duration="7000" />
+      <workItem from="1607778376052" duration="2000" />
+      <workItem from="1607859915179" duration="5000" />
     </task>
     <servers />
   </component>
@@ -106,16 +101,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="700" y="94" key="#Project_Structure" timestamp="1605027709792">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="700" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1605027709792" />
-    <state x="700" y="94" key="SettingsEditor" timestamp="1605027757616">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="700" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605027757616" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
