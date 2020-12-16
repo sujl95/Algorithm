@@ -1,7 +1,6 @@
 package Algorism.Java.programmers.kakao;
 
-import java.util.Arrays;
-import java.util.Stack;
+import java.util.*;
 
 public class P64061 {
     public static void main(String[] args) {
