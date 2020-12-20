@@ -8,6 +8,6 @@ public class P62048_1 {
     }
     public static long solution(int w, int h) {
         int gcd = BigInteger.valueOf(w).gcd(BigInteger.valueOf(h)).intValue();
-        return ((long) w * h) - ((((long) w / gcd) + ((long) h / gcd) - 1) * gcd);
+        return (long) w * h - (long) (w  + h - gcd) ;
     }
 }
