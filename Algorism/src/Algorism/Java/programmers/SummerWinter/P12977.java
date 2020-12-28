@@ -12,18 +12,16 @@ public class P12977 {
 		for (int i = 0; i < n-2; i++) {
 			for (int j = i + 1; j < n-1; j++) {
 				for (int k = j + 1; k < n; k++) {
-					if (i != k || j != k) {
-						int sum = nums[i] + nums[j] + nums[k];
-						int sqrt = (int) Math.sqrt(sum);
-						while(sqrt > 1) {
-							if (sum % sqrt == 0) {
-								break;
-							}
-							sqrt--;
+					int sum = nums[i] + nums[j] + nums[k];
+					int sqrt = (int) Math.sqrt(sum);
+					while(sqrt > 1) {
+						if (sum % sqrt == 0) {
+							break;
 						}
-						if (sqrt == 1) {
-							cnt++;
-						}
+						sqrt--;
+					}
+					if (sqrt == 1) {
+						cnt++;
 					}
 				}
 			}
