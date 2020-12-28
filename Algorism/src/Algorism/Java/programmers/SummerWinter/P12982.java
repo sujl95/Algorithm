@@ -11,11 +11,12 @@ public class P12982 {
     public static int solution(int[] d, int budget) {
         int answer = 0;
         Arrays.sort(d);
-        for (int i = 0; i < d.length; i++) {
-            if (d[i] <= budget) {
-                budget -= d[i];
+        for (int j : d) {
+            if (j <= budget) {
+                budget -= j;
                 answer++;
-            } else break;
+            } else
+                break;
         }
         return answer;
     }
