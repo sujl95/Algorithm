@@ -1,4 +1,4 @@
-package Algorism.Java.etc;
+package Algorism.Java.codingTest._2020toss;
 
 import java.util.*;
 

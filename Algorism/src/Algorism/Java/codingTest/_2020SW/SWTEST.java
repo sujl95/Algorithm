@@ -1,5 +1,7 @@
-package Algorism.Java.etc;
+package Algorism.Java.codingTest._2020SW;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SWTEST {
