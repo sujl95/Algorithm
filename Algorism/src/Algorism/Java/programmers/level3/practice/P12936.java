@@ -1,4 +1,4 @@
-package Algorism.Java.programmers.level2.practice;
+package Algorism.Java.programmers.level3.practice;
 
 import java.util.*;
 
