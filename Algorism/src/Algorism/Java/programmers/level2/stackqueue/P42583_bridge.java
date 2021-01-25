@@ -2,7 +2,6 @@ package Algorism.Java.programmers.level2.stackqueue;
 
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Queue;
 
 public class P42583_bridge {
 	public static void main(String[] args) {
@@ -41,7 +40,6 @@ public class P42583_bridge {
 		return answer;
 	}
 }
-
 
 class Truck {
 	int weight;
