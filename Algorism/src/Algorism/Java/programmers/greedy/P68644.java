@@ -7,15 +7,14 @@ import java.util.Set;
 public class P68644 {
     public static void main(String[] args) {
 
-        System.out.println(solution( 2,1,3,4,1));
+        System.out.println(Arrays.toString(solution(2, 1, 3, 4, 1)));
     }
 
     public static int[] solution(int... numbers) {
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i < numbers.length; i++) {
             for (int j = 0; j < numbers.length; j++) {
-                if (i == j) {
-                } else {
+                if (i != j) {
                     set.add(numbers[i] + numbers[j]);
                 }
             }
