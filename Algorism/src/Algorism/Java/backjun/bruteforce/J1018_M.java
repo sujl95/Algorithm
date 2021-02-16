@@ -21,7 +21,7 @@ public class J1018_M {
 		// toArray()로 다시 배열화.
 		// 주절주절 길게썼지만 그냥 맨 처음 입력값 배열로 바꾸는 과정....python쓸까 현타오네
 		int [] inputArr = Arrays.stream(br.readLine().split(" "))
-								.mapToInt(s->Integer.parseInt(s))
+								.mapToInt(Integer::parseInt)
 								.toArray();
 		// String 배열 선언과 초기화 과정
 		String[] board = new String[inputArr[0]];

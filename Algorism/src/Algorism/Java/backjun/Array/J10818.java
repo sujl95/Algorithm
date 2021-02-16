@@ -3,11 +3,7 @@ import java.util.*;
 public class J10818 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		
-		
-		
 		//두번째 방법
 		int min = 1000000;
 		int max = -1000000;
@@ -19,5 +15,4 @@ public class J10818 {
 		}
 		System.out.println(min + " " + max);
 	}
-
 }

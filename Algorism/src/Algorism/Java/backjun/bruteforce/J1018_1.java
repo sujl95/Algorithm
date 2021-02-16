@@ -54,8 +54,7 @@ public class J1018_1 {
    public static int cntChange(String[][] str, int min, boolean is) {
       int cnt = 0;
       String check = (is)? "W" : "B";
-      
-      for(int i = 0; i < 8; i++) {   
+      for(int i = 0; i < 8; i++) {
          for(int j = 0; j < 8; j++) {
             if((i+j) % 2 == 0) {
                if(!str[i][j].equals(check)) {
