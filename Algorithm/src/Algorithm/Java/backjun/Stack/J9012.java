@@ -23,7 +23,9 @@ public class J9012 {
                     }
                 }
             }
-            if (!stk.isEmpty()) ck = false;
+            if (!stk.isEmpty()) {
+                ck = false;
+            }
             System.out.println(ck ? "YES" : "NO");
         }
     }
