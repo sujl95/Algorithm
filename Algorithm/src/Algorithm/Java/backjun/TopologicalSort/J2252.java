@@ -14,7 +14,7 @@ public class J2252 {
         int[] cntOfLink = new int[N + 1]; // 간선의 수에 대한 배열
 
         // 가중치가 없는 그래프(인접 리스트 이용)
-        ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
+        List<List<Integer>> graph = new ArrayList<>();
         for (int i = 0; i < N + 1; i++) {
             graph.add(new ArrayList<>());
         }
@@ -32,7 +32,7 @@ public class J2252 {
     /**
      * 위상 정렬
      */
-    static void topologicalSort(ArrayList<ArrayList<Integer>> graph, int[] cntOfLink) {
+    static void topologicalSort(List<List<Integer>> graph, int[] cntOfLink) {
         Queue<Integer> queue = new LinkedList();
         // 초기: 선행 정점을 가지지 않는 정점을 큐에 삽입
         for (int i = 1; i < N + 1; i++) {
