@@ -9,21 +9,17 @@ public class J1193 {
 		int n = sc.nextInt();
 		int line = 0;
 		int cnt = 0;
-		while(true) {
-			for(int i=0;i<line+1; i++) {
+		do {
+			for (int i = 0; i < line + 1; i++) {
 				cnt++;
 			}
 			line++;
-			if(cnt >= n) break;
-		}
+		} while (cnt < n);
 		int sum=0;
-		for(int i=0;i<line;i++) {
-			sum +=i;
+		for (int i = 0; i < line; i++) {
+			sum += i;
 		}
-		int o=n-sum;
-		System.out.println((line%2==0) ? (o+"/"+(line+1-o)) : ((line+1-o)+"/"+o));
-		
-		
+		int o = n - sum;
+		System.out.println((line % 2 == 0) ? (o + "/" + (line + 1 - o)) : ((line + 1 - o) + "/" + o));
 	}
-
 }
