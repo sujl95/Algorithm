@@ -1,3 +1,5 @@
+package Algorithm.Java.backjun;
+
 import java.util.*;
 
 
@@ -5,10 +7,7 @@ public class J9498 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		
 		int a = sc.nextInt();
-		
 		if (a >= 90 && a <= 100) {
 			System.out.println("A");
 		} else if ( a >= 80 && a <= 89){
@@ -20,10 +19,5 @@ public class J9498 {
 		} else {
 			System.out.println("F");
 		}
-
-
-	
-		
 	}
-
 }
