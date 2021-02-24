@@ -12,8 +12,6 @@ public class SWTEST {
 		//1.값입력 받는다
 		//2.배열 0~9선언
 		//3.
-		
-		
 		int[] arr = {6,2,5,5,4,5,6,3,7,6};
 		ArrayList<String> list = new ArrayList<>();
 		for(int i=arr.length-1; i>=0; i--) {
@@ -22,10 +20,8 @@ public class SWTEST {
 				String answer = "";
 				while(true) {
 					if(max<=0) {
-						
 						break;
 					} else {
-						
 						answer += i ;
 						list.add(answer);
 						max -= arr[i];
@@ -37,9 +33,9 @@ public class SWTEST {
 			}
 		}
 		long ans =0;
-		for(int i=0; i<list.size();i++) {
-			if(ans < Long.parseLong(list.get(i))) {
-				ans= Long.parseLong(list.get(i));
+		for (String s : list) {
+			if (ans < Long.parseLong(s)) {
+				ans = Long.parseLong(s);
 			}
 		}
 		System.out.println(ans);
