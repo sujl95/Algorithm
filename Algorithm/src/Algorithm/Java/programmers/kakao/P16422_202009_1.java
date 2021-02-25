@@ -15,34 +15,34 @@ public class P16422_202009_1 {
         System.out.println("step12="+str);
 //      3단계 new_id에서 마침표(.)가 2번 이상 연속된 부분을 하나의 마침표(.)로 치환합니다.
         String temp = "";
-        if(str.length() <= 1){
+        if (str.length() <= 1) {
             temp = str;
         } else {
-            for(int i = 0;i<str.length();i++){
+            for (int i = 0; i < str.length(); i++) {
                 char c = str.charAt(i);
-                if( i+1 <str.length() && c == '.' && str.charAt(i+1) == '.') continue;
+                if (i + 1 < str.length() && c == '.' && str.charAt(i + 1) == '.') {
+                    continue;
+                }
                 temp += c;
-
             }
         }
         str = temp;
         System.out.println("step3="+str);
 //      4단계 new_id에서 마침표(.)가 처음이나 끝에 위치한다면 제거합니다.
-        try{
-            if(str.charAt(0) == '.'){
-                str = str.substring(1,str.length());
+        try {
+            if (str.charAt(0) == '.') {
+                str = str.substring(1, str.length());
             }
-        }catch (Exception e) {
+        } catch (Exception ignored) {
 
         }
         try {
-            if(str.charAt(str.length()-1) == '.'){
-                str = str.substring(0,str.length()-1);
+            if (str.charAt(str.length() - 1) == '.') {
+                str = str.substring(0, str.length() - 1);
             }
-        } catch (Exception e) {
+        } catch (Exception ignored) {
 
         }
-
         System.out.println("step4="+str);
 //      5단계 new_id가 빈 문자열이라면, new_id에 "a"를 대입합니다.
         if("".equals(str)) str = "a";

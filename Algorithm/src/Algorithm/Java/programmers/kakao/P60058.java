@@ -11,47 +11,53 @@ public class P60058 {
 	
 	public static String solution(String s) {
 		String answer = "";
-        if(checkString(s)) return s;
+		if (checkString(s)) {
+			return s;
+		}
         answer = transString(s);
         return answer;
     }
 	
 	public static boolean checkString(String s) {
-		if(s.charAt(0) == ')' || s.length() < 2  ) return false;
+		if (s.charAt(0) == ')' || s.length() < 2) {
+			return false;
+		}
 		Stack<Character> stk = new Stack<>();
 		stk.add('(');
-		for(int i = 1; i<s.length();i++) {
+		for (int i = 1; i < s.length(); i++) {
 			char c = s.charAt(i);
-			if(c == '(') {
+			if (c == '(') {
 				stk.add(c);
 				continue;
 			}
-			if(stk.isEmpty()) return false;
+			if (stk.isEmpty()) {
+				return false;
+			}
 			stk.pop();
 		}
 		return stk.isEmpty();
 	}
-	
 	public static String[] balString(String s) {
-		String[] arr = {"",""};
-		if(s.length() == 0) return arr;
+		String[] arr = {"", ""};
+		if(s.length() == 0)
+			return arr;
 		char ck = s.charAt(0);
 		Stack<Character> stk = new Stack<>();
 		stk.add(ck);
 		int idx = -1;
-		for(int i = 1;i<s.length();i++) {
+		for (int i = 1; i < s.length(); i++) {
 			char c = s.charAt(i);
-			if(stk.isEmpty()) {
+			if (stk.isEmpty()) {
 				idx = i;
 				break;
 			}
-			if(c == ck) {
+			if (c == ck) {
 				stk.add(c);
 				continue;
 			}
 			stk.pop();
 		}
-		if(idx < 0) {
+		if (idx < 0) {
 			arr[0] = s;
 			arr[1] = "";
 			return arr;
@@ -62,8 +68,10 @@ public class P60058 {
 	}
 	
 	public static String transString(String s) {
-		if(s.length() == 0) return s;
-		String str = "";
+		if (s.length() == 0) {
+			return s;
+		}
+		String str;
 		String[] uv = balString(s);
 		String u = uv[0];
 		String v = uv[1];
@@ -77,14 +85,14 @@ public class P60058 {
 		str += nv;
 		str += ")";
 		if(s.length() > 2) {
-			String tmp ="";
+			StringBuilder tmp = new StringBuilder();
 			for( int i=1; i<u.length()-1; i++) {
 				char c = u.charAt(i);
 				if(c == '(') {
-					tmp += ")";
+					tmp.append(")");
 					continue;
 				}
-				tmp += "(";
+				tmp.append("(");
 			}
 			str += tmp;
 		}

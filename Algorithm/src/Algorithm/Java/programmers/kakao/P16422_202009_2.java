@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class P16422_202009_2 {
     public static void main(String[] args) {
-
         String[] orders = {"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"};
         String[] orders1 = {"ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"};
         String[] orders2 = {"XYZ", "XWY", "WXA"};
@@ -15,12 +14,11 @@ public class P16422_202009_2 {
 
     public static String[] solution(String[] orders, int[] course) {
         String[] answer = {};
-
-        for(int i=0 ; i< orders.length;i++){
+        for (int i = 0; i < orders.length; i++) {
             String[] arr = orders[i].split("");
-            String temp ="";
+            String temp = "";
             Arrays.sort(arr);
-            for(int j =0; j< arr.length;j++){
+            for (int j = 0; j < arr.length; j++) {
                 temp += arr[j];
             }
             orders[i] = temp;

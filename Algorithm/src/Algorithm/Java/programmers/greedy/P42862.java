@@ -28,27 +28,28 @@ public class P42862 {
                 }
             }
         }
-        for (int i = 0 ; i< reserve.length; i++){
-            if (reserve[i] != -1)
-                map.put(reserve[i], 2);
+        for (int j : reserve) {
+            if (j != -1)
+                map.put(j, 2);
         }
-        for(int i = 0 ;i< lost.length; i++) {
+        for (int j : lost) {
             try {
-                if (map.get(lost[i]-1) == 2) {
-                    map.put(lost[i]-1 , 1);
-                } else if (map.get(lost[i]) == 2) {
-                    map.put(lost[i], 1);
-                } else if (map.get(lost[i]+1) == 2) {
-                    map.put(lost[i]+1, 1);
+                if (map.get(j - 1) == 2) {
+                    map.put(j - 1, 1);
+                } else if (map.get(j) == 2) {
+                    map.put(j, 1);
+                } else if (map.get(j + 1) == 2) {
+                    map.put(j + 1, 1);
                 } else {
-                    map.put(lost[i], 0);
+                    map.put(j, 0);
                 }
-            } catch (Exception e) {
+            } catch (Exception ignored) {
 
             }
         }
-        for(int i : map.values())
+        for (int i : map.values()) {
             if (i > 0 ) answer++;
+        }
         return answer;
     }
 }
