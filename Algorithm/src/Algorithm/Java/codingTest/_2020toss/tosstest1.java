@@ -9,24 +9,21 @@ public class tosstest1 {
 		
 		String str = sc.next();
 		boolean ck = true;
-		
-		if (str.charAt(str.length()-1) == '1') {
+
+		if (str.charAt(str.length() - 1) == '1') {
 			System.out.println(false);
 			return;
 		}
-		for ( int i = 0 ; i< str.length();i++) {
-			if(!(str.charAt(i) == '1' || str.charAt(i) == ('2'))) {
+		for (int i = 0; i < str.length(); i++) {
+			if (!(str.charAt(i) == '1' || str.charAt(i) == ('2'))) {
 				System.out.println(false);
 				return;
 			}
-			if ((i+1) < str.length() && str.charAt(i) == '1' && str.charAt(i + 1) == '1') {
-                System.out.println("false");
-                return;
-            }
-
+			if ((i + 1) < str.length() && str.charAt(i) == '1' && str.charAt(i + 1) == '1') {
+				System.out.println("false");
+				return;
+			}
 		}
-		
-		
 		System.out.println(ck);
 	}
 
