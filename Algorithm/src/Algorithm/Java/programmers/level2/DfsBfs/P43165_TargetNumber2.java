@@ -14,7 +14,9 @@ public class P43165_TargetNumber2 {
 	
 	public static int solution(int[] numbers, int target) {
 		
-		if (Arrays.stream(numbers).sum() < target) return 0;
+		if (Arrays.stream(numbers).sum() < target) {
+			return 0;
+		}
 		for (int i = 0; i < numbers.length; i++) {
 			numbers[i] *= -1;
 			dfs(numbers, target, i);
