@@ -29,12 +29,16 @@ public class P42746 {
     public static String solution(int[] numbers) {
         String answer = "";
         String[] tempArr = new String[numbers.length];
-        for (int i = 0; i < numbers.length; i++)
+        for (int i = 0; i < numbers.length; i++) {
             tempArr[i] = String.valueOf(numbers[i]);
+        }
         Arrays.sort(tempArr, (o1, o2) -> (o2 + o1).compareTo(o1 + o2));
-        for (int i = 0; i < tempArr.length; i++)
-            answer += tempArr[i];
-        if (answer.startsWith("0")) return "0";
+        for (String s : tempArr) {
+            answer += s;
+        }
+        if (answer.startsWith("0")) {
+            return "0";
+        }
         return answer;
     }
 }

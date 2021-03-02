@@ -11,12 +11,14 @@ public class P42747 {
         int n = citations.length;
         for (int i = 0; i <= n; i++) {
             int cnt = 0;
-            for( int citation : citations) {
-                if (citation >= i)
+            for (int citation : citations) {
+                if (citation >= i) {
                     cnt++;
+                }
             }
-            if (i >= cnt && n - cnt <= i)
+            if (i >= cnt && n - cnt <= i) {
                 answer = Math.max(answer, cnt);
+            }
         }
         return answer;
     }

@@ -13,15 +13,15 @@ public class P42588 {
 	public static int[] solution(int[] heights) {
         int[] answer = new int[heights.length];
         Stack<Integer> stk = new Stack<>();
-        for (int i = 0; i < heights.length; i++) {
-			stk.push(heights[i]);
+		for (int height : heights) {
+			stk.push(height);
 		}
-        for (int i = heights.length-1; i >=0 ; i--) {
-        	for (int j = i; j >=0 ; j--) {
-        		if(stk.get(i) < stk.get(j) ) {
-    				answer[i]= j+1;
-    				break;
-    			} 
+		for (int i = heights.length - 1; i >= 0; i--) {
+			for (int j = i; j >= 0; j--) {
+				if (stk.get(i) < stk.get(j)) {
+					answer[i] = j + 1;
+					break;
+				}
 			}
 		}
         return answer;

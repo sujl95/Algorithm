@@ -9,12 +9,12 @@ public class P68935 {
         int answer = 0;
         String str = "";
         while (n > 0) {
-            str += ""+(n%3);
+            str += "" + (n % 3);
             n /= 3;
         }
         int cnt = 1;
         for (int i = str.length()-1; i >= 0; i--){
-            int c = Integer.parseInt(str.charAt(i)+"");
+            int c = Integer.parseInt(str.charAt(i) + "");
             if (i == str.length()-1) {
                 answer += c;
                 continue;
