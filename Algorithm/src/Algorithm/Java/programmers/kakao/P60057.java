@@ -36,7 +36,6 @@ public class P60057 {
 					result.append(cnt).append(words.get(i));
 				else
 					result.append(words.get(i));
-
 				cnt = 1;
 			}
 		}

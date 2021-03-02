@@ -10,12 +10,10 @@ public class P60058 {
 	}
 	
 	public static String solution(String s) {
-		String answer = "";
 		if (checkString(s)) {
 			return s;
 		}
-        answer = transString(s);
-        return answer;
+		return transString(s);
     }
 	
 	public static boolean checkString(String s) {

@@ -18,7 +18,7 @@ public class P42889 {
         }
         for (int i = 1; i <= N; i++) {
             if (map.containsKey(i)) {
-                res.put(i, (double)map.get(i) / people);
+                res.put(i, (double) map.get(i) / people);
                 people -= map.get(i);
             } else {
                 res.put(i, 0.0);

@@ -26,7 +26,7 @@ public class P16422_202009_2 {
 
         for(int i = 0 ; i< orders.length;i++){
             int len = orders[i].length();
-            String temp = orders[i];
+            String temp;
             for(int j= i; j< orders.length; j++){
                 if(orders[j].length() > len) {
                     temp = orders[j];
