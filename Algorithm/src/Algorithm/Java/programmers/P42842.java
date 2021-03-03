@@ -7,7 +7,6 @@ public class P42842 {
 		int brown = sc.nextInt();
 		 int red = sc.nextInt();
 	    int[] answer = new int[2];
-	    
 	    answer[0] = ((brown-2)/2);
 	    answer[1] = 3;
 	    System.out.println(Arrays.toString(answer));

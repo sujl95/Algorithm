@@ -9,29 +9,16 @@ public class P42577 {
 	
 	public static boolean solution(String[] str) {
 		boolean bool = true;
-		
 		loop:
 		for (int i = 0; i < str.length; i++) {
-			int cnt = 0;
 			for (int j =0; j < str.length;j++) {
-				
 				if(i != j) {
-						if(str[i].indexOf(str[j]) == 0) {
-							cnt++;
-							bool = false;
-							break loop;
-						}
-						 if(cnt > 1) {
-					            break;
-					     }
+					if(str[i].indexOf(str[j]) == 0) {
+						bool = false;
+						break loop;
 					}
-					
 				}
-			if(cnt > 1) {
-		        bool = false;
-		        
-		        break;
-		    }
+			}
 		}
 		return bool;
 	}

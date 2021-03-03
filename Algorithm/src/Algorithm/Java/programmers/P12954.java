@@ -11,9 +11,9 @@ public class P12954 {
 	public static long[] solution(int x, int n) {
 		long[] answer = new long[n];
 		long cnt =0;
-	      boolean ck = (Long.toString(n).charAt(0) == '-') ? false : true;
+	      boolean ck = Long.toString(n).charAt(0) != '-';
 	      for(int i=0; i<answer.length; i++){
-	          if(ck == false)  {
+	          if(!ck)  {
 	              cnt -= x;
 	          } else {
 	              cnt += x;

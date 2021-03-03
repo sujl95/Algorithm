@@ -7,7 +7,7 @@ public class Skilltest {
 	}
 	public static int solution(int n, int a, int b)
     {
-        int arr[] = new int[n];
+        int[] arr = new int[n];
         int cnt = 0;
         
 		for (int i = 0 ; i < n; i++) {
@@ -15,11 +15,7 @@ public class Skilltest {
 				
 			}
 			arr[i] = i;
-			
 		}
-		int answer = cnt;
-        
-
-        return answer;
+		return cnt;
     }
 }

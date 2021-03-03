@@ -12,21 +12,17 @@ public class P12933 {
 		System.out.println(solution(118372));
 	}
 	public static long solution(long n) {
-		
-	    long answer = 0;
-	    ArrayList<Long> list =new ArrayList<>();
-	    
-	    String arr[] = (n+"").split("");
+		ArrayList<Long> list =new ArrayList<>();
+		String[] arr = (n + "").split("");
 	    Arrays.sort(arr);
-	    for(int i=0; i<arr.length; i++) {
-	    	list.add(Long.parseLong(arr[i]));
-	    }
+		for (String s : arr) {
+			list.add(Long.parseLong(s));
+		}
 	    Collections.reverse(list);
-	    String ans="";
-	    for(int i =0;i<list.size(); i++) {
-	    	ans += list.get(i);
-	    }
-	    answer = Long.parseLong(ans);
-	    return answer;
+		String ans = "";
+		for (Long aLong : list) {
+			ans += aLong;
+		}
+		return Long.parseLong(ans);
 	}
 }
