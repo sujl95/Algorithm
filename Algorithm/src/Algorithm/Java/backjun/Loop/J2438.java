@@ -1,4 +1,4 @@
-package Loop;
+package Algorithm.Java.backjun.Loop;
 
 import java.util.Scanner;
 
