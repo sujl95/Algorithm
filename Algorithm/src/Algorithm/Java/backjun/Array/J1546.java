@@ -3,7 +3,6 @@ import java.util.*;
 public class J1546 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
 		double M = 0;
@@ -24,7 +23,7 @@ public class J1546 {
 			}
 			sum /= N;
 		}
-		System.out.println(Math.round(sum*1000000)/1000000.0);
+		System.out.println(Math.round(sum * 1000000) / 1000000.0);
 	}
 
 }
