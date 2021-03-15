@@ -5,11 +5,13 @@ public class J2577 {
 
 	public static void main(String[] args) {
 	      Scanner sc = new Scanner(System.in);
-	      int A,B,C;
-	      int[] zero = {0,0,0,0,0,0,0,0,0,0};
-	      A = sc.nextInt();
-	      B = sc.nextInt();
-	      C = sc.nextInt();
+		int A;
+		int B;
+		int C;
+		int[] zero = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		A = sc.nextInt();
+		B = sc.nextInt();
+		C = sc.nextInt();
 		if ((100 <= A && A < 1000) && (100 <= B && B < 1000) && (100 <= C && C < 1000)) {
 			int result = A * B * C;
 			int[] digits = Stream.of(String.valueOf(result).split("")).mapToInt(Integer::parseInt).toArray();
