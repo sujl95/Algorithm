@@ -5,20 +5,20 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class J2178_New {
+public class J2178_1 {
 
 	static int[][] arr;
-	static boolean[][] visited;
-	static int[][] xy = {{1, 0, -1, 0}, {0, 1, 0, -1}};
 	static int N, M;
+	static boolean[][] visited;
+	static int[][] xy = new int[][] {{1, 0, -1, 0}, {0, 1, 0, -1}};
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();
 		M = sc.nextInt();
-		arr = new int[N][];
+		arr = new int[N][M];
 		visited = new boolean[N][M];
-		for (int i = 0; i< N; i++) {
+		for (int i = 0; i < N; i++) {
 			arr[i] = Arrays.stream(sc.next().split("")).mapToInt(Integer::parseInt).toArray();
 		}
 		bfs(0, 0);
@@ -28,15 +28,14 @@ public class J2178_New {
 	private static void bfs(int x, int y) {
 		Queue<int[]> queue = new LinkedList<>();
 		queue.offer(new int[] {x, y});
-
-		while(!queue.isEmpty()) {
+		while (!queue.isEmpty()) {
 			int[] location = queue.poll();
 			visited[x][y] = true;
 			for (int i = 0; i < 4; i++) {
 				int nextX = location[0] + xy[0][i];
 				int nextY = location[1] + xy[1][i];
 
-				if (isAvail(nextX, nextY)) {
+				if (nextX >= 0 && nextY >= 0 && nextX < N && nextY < M) {
 					if (arr[nextX][nextY] != 0 && !visited[nextX][nextY]) {
 						queue.offer(new int[] {nextX, nextY});
 						visited[nextX][nextY] = true;
@@ -45,10 +44,6 @@ public class J2178_New {
 				}
 			}
 		}
-	}
 
-	private static boolean isAvail(int nextX, int nextY) {
-		return nextX >= 0 && nextY >= 0 && nextX < N && nextY < M;
 	}
-
 }
