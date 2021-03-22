@@ -25,13 +25,16 @@ public class J2606 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt(), V = sc.nextInt();
-		arr = new int [N+1][N+1];
+		arr = new int[N + 1][N + 1];
 		for (int i = 0; i < V; i++) {
 			int a = sc.nextInt(), b = sc.nextInt();
 			arr[a][b] = arr[b][a] = 1;
 		}
-		for(int ar[] : arr) System.out.println(Arrays.toString(ar));
-		vst = new int[N+1]; dfs(1);
+		for (int[] ar : arr) {
+			System.out.println(Arrays.toString(ar));
+		}
+		vst = new int[N+1];
+		dfs(1);
 		System.out.println(cnt);
 	}
 
