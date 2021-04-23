@@ -3,7 +3,7 @@ package Algorithm.Java.codingTest._202009Naver;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class _2problem {
+public class _3problem {
     static int[] arr = {6,2,5,5,4,5,6,3,7,6};
     static long[] dp = new long[101];
     static int[] Min;
