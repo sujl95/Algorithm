@@ -2,6 +2,7 @@ package Algorithm;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class test2 {
 
@@ -28,24 +29,14 @@ public class test2 {
 	}
 
 	public static int[] solution(int[] price) {
-		int length = price.length;
-		int[] arr = new int[length];
-		int priceLength = price.length;
-		if (0 < priceLength && priceLength <= 500000) {
-			for (int i = 0; i < priceLength; i++) {
-				boolean result = false;
-				for (int j = i + 1; j < priceLength; j++) {
-					if (price[i] < price[j]) {
-						result = true;
-						arr[i] = j - i;
-						break;
-					}
-				}
-				if (!result) {
-					arr[i] = -1;
-				}
+		Stack<Integer> st = new Stack<>();
+		int[] res = new int[price.length];
+		for (int i = 0; i < price.length; i++) {
+			while (!st.isEmpty() && price[st.peek()] < price[i]) {
+				res[st.peek()] = i - st.pop();
 			}
+			st.push(i);
 		}
-		return arr;
+		return res;
 	}
 }
