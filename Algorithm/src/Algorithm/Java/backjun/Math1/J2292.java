@@ -1,5 +1,5 @@
 
-package Algorithm.Java.backjun.Math1;
+package Algorithm.Java.backjun.math1;
 
 public class J2292 {
 

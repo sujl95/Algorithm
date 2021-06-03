@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.Recursive;
+package Algorithm.Java.backjun.recursive;
 
 import java.util.Scanner;
 

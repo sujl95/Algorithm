@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.Queue;
+package Algorithm.Java.backjun.queue;
 import java.util.*;
 public class J1966 {
 	public static int solution(int[] priorities, int location) {

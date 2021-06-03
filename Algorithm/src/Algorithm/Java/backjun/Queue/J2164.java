@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.Queue;
+package Algorithm.Java.backjun.queue;
 
 import java.util.LinkedList;
 import java.util.Queue;

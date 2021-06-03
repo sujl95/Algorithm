@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.String;
+package Algorithm.Java.backjun.string;
 import java.io.*;
 public class J11654 {
 

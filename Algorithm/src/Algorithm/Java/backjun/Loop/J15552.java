@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.Loop;
+package Algorithm.Java.backjun.loop;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

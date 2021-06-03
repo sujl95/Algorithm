@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.String;
+package Algorithm.Java.backjun.string;
 
 import java.util.*;
 public class J1152 {

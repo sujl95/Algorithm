@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.TopologicalSort;
+package Algorithm.Java.backjun.topologicalsort;
 
 import java.util.*;
 

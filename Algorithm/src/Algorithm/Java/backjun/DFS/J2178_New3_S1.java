@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.DFS;
+package Algorithm.Java.backjun.dfs;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

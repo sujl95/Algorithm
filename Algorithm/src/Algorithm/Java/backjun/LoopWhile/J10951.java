@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.LoopWhile;
+package Algorithm.Java.backjun.loopwhile;
 import java.util.*;
 public class J10951 {
 

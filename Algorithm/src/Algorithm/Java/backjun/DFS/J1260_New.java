@@ -1,10 +1,9 @@
-package Algorithm.Java.backjun.DFS;
+package Algorithm.Java.backjun.dfs;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 public class J1260_New {
 

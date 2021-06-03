@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.Word;
+package Algorithm.Java.backjun.word;
 
 import java.util.Scanner;
 

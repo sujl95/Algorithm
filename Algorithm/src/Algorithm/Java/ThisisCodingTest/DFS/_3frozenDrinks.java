@@ -29,7 +29,7 @@ public class _3frozenDrinks {
         System.out.println(cnt);
     }
 
-    public static boolean dfs(int x, int y) {
+    private static boolean dfs(int x, int y) {
         if (x < 0 || x >= n || y < 0 || y >= m ) return false;
         if (edges[x][y] == 0) {
             //노드 방문 처리

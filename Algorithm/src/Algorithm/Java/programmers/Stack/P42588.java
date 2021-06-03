@@ -1,4 +1,4 @@
-package Algorithm.Java.programmers.Stack;
+package Algorithm.Java.programmers.stack;
 
 import java.util.*;
 

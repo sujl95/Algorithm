@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.Stack;
+package Algorithm.Java.backjun.stack;
 
 import java.util.Scanner;
 
