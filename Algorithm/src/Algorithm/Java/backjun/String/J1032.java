@@ -9,8 +9,9 @@ public class J1032 {
         StringBuilder sb = new StringBuilder();
         String[] arr = new String[n];
         boolean ck = true;
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.next();
+        }
         for (int i = 0; i < arr[0].length(); i++) {
             for (int j = 1; j < n; j++) {
                 if (arr[0].charAt(i) == arr[j].charAt(i)) {
@@ -20,10 +21,11 @@ public class J1032 {
                     break;
                 }
             }
-            if (ck)
+            if (ck) {
                 sb.append(arr[0].charAt(i));
-            else
+            } else {
                 sb.append("?");
+            }
         }
         System.out.println(sb);
     }

@@ -7,10 +7,10 @@ public class J11047 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String str[] = sc.nextLine().split(" ");
+		String[] str = sc.nextLine().split(" ");
 		int len =Integer.parseInt(str[0]);
 		int money = Integer.parseInt(str[1]);
-		int arr[] = new int[len];
+		int[] arr = new int[len];
 		for (int i=0; i < len;i++) {
 			arr[i] = sc.nextInt();
 		}
