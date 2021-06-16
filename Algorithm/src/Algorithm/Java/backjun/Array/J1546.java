@@ -10,7 +10,7 @@ public class J1546 {
 		double sum = 0;
 		double[] arr1 = new double[N];
 
-		if (0< N && N <= 1000) {
+		if (0< N && N <= 1_000) {
 			for (int i =0; i < N; i++) {
 				arr[i] = sc.nextInt();
 				if (arr[i] > M) {
@@ -23,7 +23,7 @@ public class J1546 {
 			}
 			sum /= N;
 		}
-		System.out.println(Math.round(sum * 1000000) / 1000000.0);
+		System.out.println(Math.round(sum * 1_000_000) / 1_000_000.0);
 	}
 
 }
