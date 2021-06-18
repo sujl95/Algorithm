@@ -5,8 +5,8 @@ public class J10818 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		//두번째 방법
-		int min = 1000000;
-		int max = -1000000;
+		int min = 1_000_000;
+		int max = -1_000_000;
 		int n = sc.nextInt();
 		while(n-->0) {
 			int x = sc.nextInt();
