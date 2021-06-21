@@ -18,5 +18,4 @@ public class _2 {
 		System.out.println(sum);
 	}
 
-
 }
