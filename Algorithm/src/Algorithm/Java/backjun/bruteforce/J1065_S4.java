@@ -3,6 +3,7 @@ package Algorithm.Java.backjun.bruteforce;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class J1065_S4 {
@@ -10,22 +11,12 @@ public class J1065_S4 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
-		if (N < 100) {
-			System.out.println(N);
-			return;
-		}
-		int result = (int)(IntStream.rangeClosed(100, N).filter(J1065_S4::isHanNum).count() + 99);
-		if (N == 1000) {
-			result--;
-		}
-		System.out.println(result);
+		System.out.println(N < 100 ? N : (int)(IntStream.rangeClosed(100, N).filter(J1065_S4::isHanSu).count() + 99));
 	}
 
-	private static boolean isHanNum(int num) {
-		int hund = num / 100 % 10;
-		int ten = num / 10 % 10;
-		int one = num % 10;
-		return hund - ten == ten - one;
+	private static boolean isHanSu(int num) {
+		int[] arr = Arrays.stream(Integer.toString(num).split("")).mapToInt(Integer::parseInt).toArray();
+		return arr[2] - arr[1] == arr[1] - arr[0];
 	}
 
 }
