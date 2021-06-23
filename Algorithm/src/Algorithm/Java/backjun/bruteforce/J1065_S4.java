@@ -14,8 +14,7 @@ public class J1065_S4 {
 			System.out.println(N);
 			return;
 		}
-		int result = 99;
-		result += IntStream.rangeClosed(100, N).filter(J1065_S4::isHanNum).count();
+		int result = (int)(IntStream.rangeClosed(100, N).filter(J1065_S4::isHanNum).count() + 99);
 		if (N == 1000) {
 			result--;
 		}
