@@ -15,8 +15,8 @@ public class J11399_S3 {
 		int res = 0;
 
 		int[] arr = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt)
+				.sorted()
 				.toArray();
-		Arrays.sort(arr);
 		for (int i = 0; i < N; i++) {
 			temp += arr[i];
 			res += temp;
