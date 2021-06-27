@@ -8,7 +8,7 @@ public class J11399 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		int[] arr =new int[N]; 
+		int[] arr = new int[N];
 		int res = 0;
 		int t = 0;
 		for (int i = 0; i < N; i++) {
@@ -17,7 +17,7 @@ public class J11399 {
 		Arrays.sort(arr);
 		for (int i = 0; i < N; i++) {
 			t += arr[i];
-			res +=t ;
+			res += t;
 		}
 		System.out.println(res);
 	}
