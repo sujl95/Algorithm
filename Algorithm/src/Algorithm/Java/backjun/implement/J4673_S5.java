@@ -1,4 +1,4 @@
-package Algorithm.Java.backjun.Greedy;
+package Algorithm.Java.backjun.implement;
 
 import java.util.stream.IntStream;
 
