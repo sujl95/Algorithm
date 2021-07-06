@@ -8,9 +8,9 @@ import java.util.stream.IntStream;
 
 public class J2667_New {
 
-	static int N;
-	static int[][] arr;
-	static int[][] xy = new int[][] {{0, 1, 0, -1}, {1, 0, -1, 0}};
+	private static int N;
+	private static int[][] arr;
+	private static int[][] xy = new int[][] {{0, 1, 0, -1}, {1, 0, -1, 0}};
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

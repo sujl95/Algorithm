@@ -3,8 +3,8 @@ package Algorithm.Java.backjun.dfs;
 import java.util.Scanner;
 
 public class J1012 {
-	static int arr[][] ,wh[][] = new int[][] {{1,0,-1,0} , {0,1,0,-1}};
-	static int cnt =0;
+	private static int arr[][] ,wh[][] = new int[][] {{1,0,-1,0} , {0,1,0,-1}};
+	private static int cnt =0;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
@@ -26,7 +26,7 @@ public class J1012 {
 			System.out.println(res);
 		}
 	}
-	static void dfs(int a , int b) {
+	private static void dfs(int a , int b) {
 		arr[a][b] = 0 ; cnt++;
 		for(int i =0; i<4; i++) {
 			int aa = a+ wh[0][i];

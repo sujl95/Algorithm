@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class J7576 {
-	static int[][] tomato,wh= {{1,0,-1,0},{0,1,0,-1}};
+	private static int[][] tomato,wh= {{1,0,-1,0},{0,1,0,-1}};
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int M=sc.nextInt(), N=sc.nextInt(), max=0, cnt=0;

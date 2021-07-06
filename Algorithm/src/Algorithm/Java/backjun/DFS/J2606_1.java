@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class J2606_1 {
-	static int[] vst;
-	static int[][] arr;
-	static int cnt =0;
+	private static int[] vst;
+	private static int[][] arr;
+	private static int cnt =0;
 	private static void dfs(int a) {
 		//매개변수로 넘어온 값을 vst에 방문 했다고 저장해준다
 		//넘어온 값을 출력해준다.

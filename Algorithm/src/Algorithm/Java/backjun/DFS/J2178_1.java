@@ -7,10 +7,10 @@ import java.util.Scanner;
 
 public class J2178_1 {
 
-	static int[][] arr;
-	static int N, M;
-	static boolean[][] visited;
-	static int[][] xy = new int[][] {{1, 0, -1, 0}, {0, 1, 0, -1}};
+	private static int[][] arr;
+	private static int N, M;
+	private static boolean[][] visited;
+	private static int[][] xy = new int[][] {{1, 0, -1, 0}, {0, 1, 0, -1}};
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

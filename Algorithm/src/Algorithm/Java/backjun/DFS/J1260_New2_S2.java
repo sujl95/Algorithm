@@ -9,11 +9,11 @@ import java.util.Scanner;
 
 public class J1260_New2_S2 {
 
-	static List<Integer>[] arr;
-	static boolean[] visited;
-	static int n ;
-	static int m ;
-	static int start;
+	private static List<Integer>[] arr;
+	private static boolean[] visited;
+	private static int n ;
+	private static int m ;
+	private static int start;
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

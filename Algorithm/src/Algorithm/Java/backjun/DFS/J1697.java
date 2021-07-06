@@ -5,9 +5,9 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class J1697 {
-	static int n;
-	static int k;
-	static int[] visited = new int[100001];
+	private static int n;
+	private static int k;
+	private static int[] visited = new int[100001];
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

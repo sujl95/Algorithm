@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class J2606_New {
 
-	static int cnt;
-	static int[][] arr;
-	static boolean[] visited;
+	private static int cnt;
+	private static int[][] arr;
+	private static boolean[] visited;
 
 
 	public static void main(String[] args) {

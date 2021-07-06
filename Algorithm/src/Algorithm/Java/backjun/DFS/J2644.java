@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 public class J2644 {
 
-	static int n;
-	static int m;
-	static int[][] arr;
-	static int[] distance;
-	static boolean[] isVisited;
-	static int people1;
-	static int people2;
+	private static int n;
+	private static int m;
+	private static int[][] arr;
+	private static int[] distance;
+	private static boolean[] isVisited;
+	private static int people1;
+	private static int people2;
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

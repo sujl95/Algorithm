@@ -6,8 +6,8 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class J1260 {
-	static int[][] arr;
-	static int[] vst;
+	private static int[][] arr;
+	private static int[] vst;
 
 	private static void dfs(int V) {
 		//매개변수로 넘어온 값을 vst에 방문 했다고 저장해준다

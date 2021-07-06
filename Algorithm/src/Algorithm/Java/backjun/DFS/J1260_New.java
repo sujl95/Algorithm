@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class J1260_New {
 
-	static int[][] arr;
-	static int[] visited;
+	private static int[][] arr;
+	private static int[] visited;
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

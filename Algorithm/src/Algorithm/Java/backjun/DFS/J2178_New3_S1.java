@@ -7,12 +7,12 @@ import java.util.Queue;
 
 public class J2178_New3_S1 {
 
-	static int[][] map;
-	static boolean[][] visited;
-	static int[] dx = {0, 1, 0, -1};
-	static int[] dy = {1, 0, -1, 0};
-	static int n;
-	static int m;
+	private static int[][] map;
+	private static boolean[][] visited;
+	private static int[] dx = {0, 1, 0, -1};
+	private static int[] dy = {1, 0, -1, 0};
+	private static int n;
+	private static int m;
 
 
 	public static void main(String[] args) throws Exception {

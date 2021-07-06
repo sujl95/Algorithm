@@ -10,13 +10,13 @@ import java.util.stream.IntStream;
 
 public class J14502_G5 {
 
-	static int N;
-	static int M;
-	static int res;
-	static int[][] wall;
-	static int[] dx = {-1, 1, 0, 0};
-	static int[] dy = {0, 0, 1, -1};
-	static Queue<Position> virusPositions = new ArrayDeque<>();
+	private static int N;
+	private static int M;
+	private static int res;
+	private static int[][] wall;
+	private static int[] dx = {-1, 1, 0, 0};
+	private static int[] dy = {0, 0, 1, -1};
+	private static Queue<Position> virusPositions = new ArrayDeque<>();
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -81,8 +81,8 @@ public class J14502_G5 {
 		}
 		res = Math.max(count, res);
 	}
-
 }
+
 class Position {
 	public int x;
 	public int y;

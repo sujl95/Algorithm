@@ -7,12 +7,12 @@ import java.util.Arrays;
 
 public class J4963_S2 {
 
-	static int[] dx = {0, 0, -1, 1, 1, -1, -1, 1};
-	static int[] dy = {-1, 1, 0, 0, 1, 1, -1, -1};
-	static int N;
-	static int M;
-	static int[][] map;
-	static boolean[][] visited;
+	private static int[] dx = {0, 0, -1, 1, 1, -1, -1, 1};
+	private static int[] dy = {-1, 1, 0, 0, 1, 1, -1, -1};
+	private static int N;
+	private static int M;
+	private static int[][] map;
+	private static boolean[][] visited;
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

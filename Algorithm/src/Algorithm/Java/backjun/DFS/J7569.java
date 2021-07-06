@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class J7569 {
 
-	static int[] dx = { -1, 0, 1, 0, 0, 0 };
-	static int[] dy = { 0, 1, 0, -1, 0, 0 };
-	static int[] dz = { 0, 0, 0, 0, -1, 1 };
+	private static int[] dx = { -1, 0, 1, 0, 0, 0 };
+	private static int[] dy = { 0, 1, 0, -1, 0, 0 };
+	private static int[] dz = { 0, 0, 0, 0, -1, 1 };
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

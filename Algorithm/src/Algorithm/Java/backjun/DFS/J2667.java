@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class J2667 {
-	static int[][] arr,wh = new int[][] {{1,0,-1,0} , {0,1,0,-1}};
-	static int cnt = 0;
+	private static int[][] arr,wh = new int[][] {{1,0,-1,0} , {0,1,0,-1}};
+	private static int cnt = 0;
 
 	private static void dfs(int a, int b) {
 		arr[a][b] = 0;
