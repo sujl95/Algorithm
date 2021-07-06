@@ -47,7 +47,7 @@ public class J1260_New2_S2 {
 
 	}
 
-	public static void dfs(int start) {
+	private static void dfs(int start) {
 		visited[start] = true;
 		System.out.print(start + " ");
 		for (int i = 0; i < arr[start].size(); i++) {
@@ -60,7 +60,7 @@ public class J1260_New2_S2 {
 	}
 
 	// bfs Queue
-	public static void bfs() {
+	private static void bfs() {
 		// Queue 선언해주고
 		Queue<Integer> q = new ArrayDeque<>();
 		// 첫 번째 넣고

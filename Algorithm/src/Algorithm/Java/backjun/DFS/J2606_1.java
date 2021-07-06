@@ -7,7 +7,7 @@ public class J2606_1 {
 	static int[] vst;
 	static int[][] arr;
 	static int cnt =0;
-	static void dfs(int a) {
+	private static void dfs(int a) {
 		//매개변수로 넘어온 값을 vst에 방문 했다고 저장해준다
 		//넘어온 값을 출력해준다.
 		//arr에서 V행을 찾아본다
