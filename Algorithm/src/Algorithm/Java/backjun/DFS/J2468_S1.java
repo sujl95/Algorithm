@@ -12,6 +12,16 @@ import java.util.Queue;
 
 public class J2468_S1 {
 
+	private static class Position {
+		public int x;
+		public int y;
+
+		public Position(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+	}
+
 	private static int N;
 	private static boolean[][] visited;
 	private static final int[] dx = {0, 0, 1, -1};

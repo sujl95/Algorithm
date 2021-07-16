@@ -9,6 +9,16 @@ import java.util.Queue;
 
 public class J7562_S2 {
 
+	private static class Position {
+		public int x;
+		public int y;
+
+		public Position(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+	}
+
 	private static int[][] map;
 
 	private static int[] dx = {1, 2, 2, 1, -1, -2, -2, -1};

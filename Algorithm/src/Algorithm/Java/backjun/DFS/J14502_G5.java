@@ -10,6 +10,16 @@ import java.util.stream.IntStream;
 
 public class J14502_G5 {
 
+	private static class Position {
+		public int x;
+		public int y;
+
+		public Position(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+	}
+
 	private static int N;
 	private static int M;
 	private static int res;
@@ -83,12 +93,3 @@ public class J14502_G5 {
 	}
 }
 
-class Position {
-	public int x;
-	public int y;
-
-	public Position(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
-}
