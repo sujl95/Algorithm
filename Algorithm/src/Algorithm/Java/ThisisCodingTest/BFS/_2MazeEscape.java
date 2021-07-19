@@ -34,7 +34,7 @@ public class _2MazeEscape {
     }
 
 
-    public static void bfs(int x, int y) {
+    private static void bfs(int x, int y) {
         Queue<Node> q = new LinkedList();
         int[] dx = {1, -1, 0, 0};
         int[] dy = {0, 0, -1, 1};
