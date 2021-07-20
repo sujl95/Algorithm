@@ -34,7 +34,7 @@ public class J2178_New3_S1 {
 		bfs(0, 0);
 	}
 
-	public static void bfs(int x, int y) {
+	private static void bfs(int x, int y) {
 		Queue<Index> queue = new ArrayDeque<>();
 		queue.offer(new Index(x, y, 1));
 		while (!queue.isEmpty()) {

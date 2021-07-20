@@ -10,7 +10,7 @@ public class J2178 {
 	private static boolean[][] visited ;
 	private static int N ,M;
 
- 	public static void bfs(int i, int j){
+ 	private static void bfs(int i, int j){
 		Queue<int[]> q = new LinkedList<>();
 		q.offer(new int[] {i,j});
 
