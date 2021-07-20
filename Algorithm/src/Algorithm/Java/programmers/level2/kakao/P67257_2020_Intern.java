@@ -3,6 +3,7 @@ package Algorithm.Java.programmers.level2.kakao;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -10,8 +11,8 @@ public class P67257_2020_Intern {
 
 	private static Map<Character, Integer> map;
 	private static long answer = Integer.MIN_VALUE;
-	private static List<Character> operands = new ArrayList<>();
-	private static List<Long> numbers = new ArrayList<>();
+	private static List<Character> operands = new LinkedList<>();
+	private static List<Long> numbers = new LinkedList<>();
 	private static int[][] operArr = {{0, 1, 2}, {0, 2, 1}, {1, 0, 2}, {1, 2, 0}, {2, 0, 1}, {2, 1, 0}};
 
 	public static void main(String[] args) {
