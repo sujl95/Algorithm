@@ -10,12 +10,11 @@ public class P76502_Parentheses_Turn {
 
 	public static int solution(String s) {
 		int answer = 0;
-		String copy = s;
 		for (int i = 0; i < s.length(); i++) {
 			Stack<Character> stack = new Stack<>();
-			copy = copy.substring(1) + copy.charAt(0);
-			for (int j = 0; j < copy.length(); j++) {
-				char c = copy.charAt(j);
+			s = s.substring(1) + s.charAt(0);
+			for (int j = 0; j < s.length(); j++) {
+				char c = s.charAt(j);
 				if (stack.isEmpty()) {
 					stack.push(c);
 					continue;
