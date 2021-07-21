@@ -20,7 +20,7 @@ public class _2_New {
 
 	public static int[] solution(String password) {
 		// 1
-		if (!(8 <= password.length() && password.length() <= 15)) {
+		if (!(isRange(8, password.length(), 15))) {
 			check[0] = true;
 		}
 		char beforeChar = password.charAt(0);
@@ -60,15 +60,11 @@ public class _2_New {
 				map.put(c, integer + 1);
 			}
 		}
-		int ckCount = 0;
-		for (boolean b : ck) {
-			if (b) {
-				ckCount++;
-			}
-		}
-		if (ckCount < 3) {
-			check[2] = true;
-		}
+		threeCondition(ck);
+		return getResult();
+	}
+
+	private static int[] getResult() {
 		String result = "";
 		for (int i = 0; i < check.length; i++) {
 			if (check[i]) {
@@ -78,49 +74,38 @@ public class _2_New {
 		if (result.length() == 0) {
 			return new int[] {0};
 		}
-		return Arrays.stream(result.toString().split(" ")).mapToInt(Integer::parseInt).toArray();
+		return Arrays.stream(result.split(" ")).mapToInt(Integer::parseInt).toArray();
+	}
+
+	private static void threeCondition(boolean[] ck) {
+		int ckCount = 0;
+		for (boolean b : ck) {
+			if (b) {
+				ckCount++;
+			}
+		}
+		if (ckCount < 3) {
+			check[2] = true;
+		}
 	}
 
 	private static int getConditionValue(char c) {
-		if ('0' <= c && c <= '9') {
+		if (isRange('0', c, '9')) {
 			return 0;
 		}
-
-		if ('A' <= c && c <= 'Z') {
+		if (isRange('A', c, 'Z')) {
 			return 1;
 		}
-
-		if ('a' <= c && c <= 'z') {
+		if (isRange('a', c, 'z')) {
 			return 2;
 		}
-		boolean ck = false;
-		String reg = "~!@#$%^&*";
-		for (int i = 0; i < reg.length(); i++) {
-			char ch = reg.charAt(i);
-			if (c == ch) {
-				ck = true;
-				break;
-			}
-		}
-		if (ck) {
+		if (isCk(c)) {
 			return 3;
 		}
 		return -1;
 	}
 
-	private static boolean isValid(char c) {
-		if ('0' <= c && c <= '9') {
-			return true;
-		}
-
-		if ('A' <= c && c <= 'Z') {
-			return true;
-		}
-
-		if ('a' <= c && c <= 'z') {
-			return true;
-		}
-
+	private static boolean isCk(char c) {
 		boolean ck = false;
 		String reg = "~!@#$%^&*";
 		for (int i = 0; i < reg.length(); i++) {
@@ -131,6 +116,23 @@ public class _2_New {
 			}
 		}
 		return ck;
+	}
+
+	private static boolean isValid(char c) {
+		if (isRange('0', c, '9')) {
+			return true;
+		}
+		if (isRange('A', c, 'Z')) {
+			return true;
+		}
+		if (isRange('a', c, 'z')) {
+			return true;
+		}
+		return isCk(c);
+	}
+
+	private static boolean isRange(int c2, int c3, int c4) {
+		return c2 <= c3 && c3 <= c4;
 	}
 
 }
