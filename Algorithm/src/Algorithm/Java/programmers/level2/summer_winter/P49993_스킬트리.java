@@ -15,10 +15,10 @@ public class P49993_스킬트리 {
 	public static int solution(String skill, String[] skill_trees) {
 		int answer = 0;
 		for (int i = 0; i < skill_trees.length; i++) {
-			Map<Character, int[]> map = new HashMap<>();
+			Map<Character, Integer> map = new HashMap<>();
 			for (int j = 0; j < skill.length(); j++) {
 				char c = skill.charAt(j);
-				map.put(c, new int[] {j, 0});
+				map.put(c, j);
 			}
 			String skillTree = skill_trees[i];
 			if (isSkillTree(map, skillTree)) {
@@ -28,13 +28,13 @@ public class P49993_스킬트리 {
 		return answer;
 	}
 
-	private static boolean isSkillTree(Map<Character, int[]> map, String skillTree) {
+	private static boolean isSkillTree(Map<Character, Integer> map, String skillTree) {
 		int idx = 0;
 		for (int j = 0; j < skillTree.length(); j++) {
 			char c = skillTree.charAt(j);
-			int[] value = map.get(c);
+			Integer value = map.get(c);
 			if (value != null) {
-				if (idx == value[0]) {
+				if (idx == value) {
 					idx++;
 					continue;
 				}
