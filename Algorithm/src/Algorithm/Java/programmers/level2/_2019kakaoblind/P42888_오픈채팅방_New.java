@@ -2,7 +2,6 @@ package Algorithm.Java.programmers.level2._2019kakaoblind;
 
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -19,12 +18,12 @@ public class P42888_오픈채팅방_New {
 				.map(s -> s.split(" "))
 				.filter(record -> record.length == 3)
 				.collect(Collectors.toMap(record -> record[1], record -> record[2], (a, b) -> b));
-		List<String> answers = Arrays.stream(records)
+		return Arrays.stream(records)
 				.map(s -> s.split(" "))
 				.filter(record -> !record[0].equals("Change"))
 				.map(record -> map.get(record[1]) + (record[0].equals("Enter") ? "님이 들어왔습니다." : "님이 나갔습니다."))
-				.collect(Collectors.toCollection(LinkedList::new));
-		return answers.toArray(String[]::new);
+				.collect(Collectors.toCollection(LinkedList::new))
+				.toArray(String[]::new);
 	}
 
 }
