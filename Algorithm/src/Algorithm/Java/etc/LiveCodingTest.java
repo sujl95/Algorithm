@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class LiveCodingTest {
 
   public static void main(String[] args) {
-    new LiveCodingTest().test1();
+    LiveCodingTest liveCodingTest = new LiveCodingTest();
+    liveCodingTest.test2();
   }
 
   public void test1() {
@@ -45,5 +46,36 @@ public class LiveCodingTest {
     }
     System.out.println("arr = " + Arrays.deepToString(arr));
   }
+
+  public void test2() {
+    /**
+     * N개의 숫자들이 입력될 때, 순차 정렬되는 함수를 작성해주세요. (외부 함수 사용 X)
+     * 예 : 6 9 3 1 10  => 1 3 6 9 10
+     */
+
+    String input = "6 9 3 1 10";
+
+    int[] arr = Arrays.stream(input.split(" ")).mapToInt(Integer::valueOf).toArray();
+
+    for (int i = 0; i < arr.length; i++) {
+      int min = arr[i];
+      int idx = i;
+      for (int j = i + 1; j < arr.length - 1; j++) {
+        if (min > arr[j]) {
+          min = Math.min(min, arr[j]);
+          idx = j;
+        }
+      }
+      swap(arr, i, idx);
+    }
+    System.out.println("arr = " + Arrays.toString(arr));
+  }
+
+  private void swap(int[] arr, int i, int idx) {
+    int temp = arr[i];
+    arr[i] = arr[idx];
+    arr[idx] = temp;
+  }
+
 
 }
