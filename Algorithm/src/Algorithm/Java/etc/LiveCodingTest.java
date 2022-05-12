@@ -6,7 +6,7 @@ public class LiveCodingTest {
 
   public static void main(String[] args) {
     LiveCodingTest liveCodingTest = new LiveCodingTest();
-    liveCodingTest.test2();
+    liveCodingTest.test3();
   }
 
   public void test1() {
@@ -77,5 +77,36 @@ public class LiveCodingTest {
     arr[idx] = temp;
   }
 
+  public void test3() {
+    /**
+     * 단어에 나오는 모음의 순서를 바꾸는 함수를 만들어보세요.
+     * 예 : naver webtoon => novor webtean
+     */
+
+    String input = "naver webtoon";
+    char[] arr = input.toCharArray();
+
+    int idx = input.length() - 1;
+    for (int i = 0; i < input.length(); i++) {
+      if (isConsonant(arr[i])) {
+        for (int j = idx - 1; j > 0; j--) {
+          if (i < j) {
+            if (isConsonant(arr[j])) {
+              char temp = arr[i];
+              arr[i] = arr[j];
+              arr[j] = temp;
+              idx = j;
+              break;
+            }
+          }
+        }
+      }
+    }
+    System.out.println("arr = " + Arrays.toString(arr));
+  }
+
+  public boolean isConsonant(char c) {
+    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
+  }
 
 }
