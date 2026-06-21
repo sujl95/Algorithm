@@ -10,9 +10,9 @@
 
         private var availableTokens = 5.0
 
-        private val refillRateMs = 0.001 // 1ms당 0.001개 (1초에 1개)
+        private val refillRateMs = 0.000001
 
-        private var lastRefillTimestamp = System.currentTimeMillis()
+        private var lastRefillTimestamp = System.nanoTime()
 
         private val lock = ReentrantLock()
 
@@ -24,7 +24,7 @@
 
             lock.withLock {
                 while(true) {
-                    val now = System.currentTimeMillis()
+                    val now = System.nanoTime()
                     val elapsedNanos = now - lastRefillTimestamp
 
                     if (elapsedNanos > 0) {
@@ -42,7 +42,11 @@
                         return false
                     }
 
+                    val startWait = System.nanoTime()
                     remainingNanoSeconds = condition.awaitNanos(remainingNanoSeconds)
+                    val actualWait = System.nanoTime() - startWait
+
+                    remainingNanoSeconds -= actualWait
                 }
             }
 
